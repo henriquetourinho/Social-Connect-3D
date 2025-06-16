@@ -260,6 +260,15 @@ Não se esqueça de adicionar a linha abaixo no `<head>` do seu HTML para que os
 ```html
 <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css)" />
 ```
+---
+
+## 🌐 Site de Demonstração (Demo Completa)
+
+Para uma visão completa do componente em um ambiente real, explore a pasta `/site` neste repositório.
+
+Dentro dela, você encontrará uma página web totalmente funcional (`index.html`, `css/style.css`, `js/script.js`) que serve como um exemplo prático de implementação. É a melhor forma de testar o projeto localmente ou de ver como as partes se conectam.
+
+➡️ **[Navegue até a pasta `/site` para ver os arquivos](https://github.com/henriquetourinho/Social-Connect-3D/tree/main/site)**
 
 ---
 
