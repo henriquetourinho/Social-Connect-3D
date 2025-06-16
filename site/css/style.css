@@ -1,0 +1,143 @@
+/**
+ * Social Connect 3D - Ícones de Compartilhamento 3D Animados
+ * * @author Henrique Tourinho
+ * @license MIT
+ * @version 1.0.0
+ * @link https://github.com/henriquetourinho/Social-Connect-3D
+ */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1c1c1e;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.share-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn-wrapper {
+    perspective: 1000px;
+}
+
+.share-btn {
+    position: relative;
+    display: grid; 
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    text-decoration: none;
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.8, 1), box-shadow 0.5s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.btn-wrapper:hover .share-btn {
+    transform: translateZ(50px) rotateX(20deg) rotateY(-25deg);
+    box-shadow: -25px 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.share-btn > i {
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: translateZ(40px);
+    pointer-events: none;
+}
+
+.share-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    transform: translateZ(0);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.share-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%);
+    opacity: 0;
+    transform: translateZ(1px) scale(1.1);
+    transition: opacity 0.5s ease;
+}
+
+.btn-wrapper:hover .share-btn::after {
+    opacity: 1;
+}
+
+.share-btn > span {
+    position: absolute;
+    bottom: -10px;
+    background: #2c2c2e;
+    color: #f0f0f0;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.4s 0.1s cubic-bezier(0.2, 1, 0.8, 1), opacity 0.4s 0.1s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.btn-wrapper:hover .share-btn > span {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.share-btn.whatsapp::before { background-color: #25D366; }
+.share-btn.facebook::before { background-color: #1877F2; }
+.share-btn.linkedin::before { background-color: #0077B5; }
+.share-btn.x-twitter::before { background-color: #000000; }
+.share-btn.pinterest::before { background-color: #E60023; }
+.share-btn.telegram::before { background-color: #26A5E4; }
+.share-btn.email::before { background-color: #777777; }
+.share-btn.reddit::before { background-color: #FF4500; }
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #00a0dc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
