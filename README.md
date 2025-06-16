@@ -32,21 +32,63 @@ Copie o bloco de código HTML abaixo para a área da sua página onde os ícones
 <summary><strong>Clique para ver o código HTML do Componente</strong></summary>
 
 ```html
-<div class="share-container">
-    
-    <div class="btn-wrapper">
-        <a href="#" class="share-btn whatsapp">
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp</span>
-        </a>
-    </div>
+   <div class="share-container">
+        
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
 
-    <div class="btn-wrapper">
-        <a href="#" class="share-btn facebook">
-            <i class="fab fa-facebook-f"></i>
-            <span>Facebook</span>
-        </a>
-    </div>
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn x-twitter">
+                <i class="fab fa-x-twitter"></i>
+                <span>X</span>
+            </a>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn pinterest">
+                <i class="fab fa-pinterest"></i>
+                <span>Pinterest</span>
+            </a>
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn telegram">
+                <i class="fab fa-telegram-plane"></i>
+                <span>Telegram</span>
+            </a>
+        </div>
+        
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn email">
+                <i class="fas fa-envelope"></i>
+                <span>E-mail</span>
+            </a>
+        </div>
+        
+        <div class="btn-wrapper">
+            <a href="#" class="share-btn reddit">
+                <i class="fab fa-reddit-alien"></i>
+                <span>Reddit</span>
+            </a>
+        </div>
 
     </div>
 ```
